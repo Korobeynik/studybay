@@ -17,6 +17,8 @@ body
 	font-family: $default-font
 	overflow-x: hidden
 	color: $text
+	background: url(../img/bg1.png) 100% 0 no-repeat
+	background-size: 45%
 	input, textarea
 		border: #666 1px solid
 		outline: none
@@ -38,6 +40,207 @@ body
 b, strong
 	font-weight: bold
 
+header
+	padding-top: 40px
+	margin-bottom: 90px
 
+.logo
+	display: inline-block
+	margin-right: 50px	
+.how-it-work
+	font-size: 15px
+	font-weight: 300
+	color: #3a89db
+
+.footer-line
+	display: flex
+	align-items: center
+	a
+		display: inline-block
+		img
+			width: 16px
+			display: inline-block
+
+
+.wrapper
+	background: url(../img/bg2.png) 0% 100% no-repeat
+	background-size: 80%
+
+.mobile-bg
+	margin-bottom: 30px
+	display: none
+	img
+		max-width: 100%
+
+main
+	font-family: 'Proxima Nova Rg'
+
+a.how-it-work.mobile
+	text-align: center
+	margin: 0 auto
+	width: 100%
+	margin-bottom: 20px
+	display: none
+
+.form-title
+	font-size: 46px
+	line-height: 1.24
+	letter-spacing: 0.5px
+	color: #2b2f3d
+	font-weight: bold
+	margin-bottom: 20px
+
+.form-text
+	font-weight: normal
+	font-size: 20px
+	line-height: 1.8
+	color: #2b2f3d
+	margin-bottom: 60px
+
+.main-form
+	margin-bottom: 100px
+	.form-content
+		display: flex
+		flex-wrap: wrap
+		input
+			width: 284px
+			margin-right: 19px
+			margin-bottom: 20px
+			height: 56px
+			display: flex
+			align-items: center
+			padding-left: 24px
+			border-radius: 4px
+			background-color: #f9fcff
+			border: 1px solid #d7d7d7
+		select
+			width: 284px
+			margin-bottom: 20px
+			height: 56px
+			display: flex
+			align-items: center
+			padding-left: 24px
+			border-radius: 4px
+			background-color: #f9fcff
+			border: 1px solid #d7d7d7
+			color: #2b2f3d
+			font-size: 18px
+			-webkit-appearance: none
+			background: #f9fcff url('../img/down-arrow.svg')
+			background-size: 12px
+			background-position: 92% center
+			background-repeat: no-repeat
+			-moz-appearance: none
+			text-indent: 0.01px
+			text-overflow: ''
+			-ms-appearance: none
+			appearance: none !important
+			&:hover
+				cursor: pointer
+			option
+				font-size: 14px
+				font-weight: 500
+				letter-spacing: 0.4px
+				text-transform: uppercase	
+				padding: 10px 0
+			&::-ms-expand
+				display: none
+		button
+			width: 284px		
+			height: 56px
+			display: flex
+			align-items: center
+			justify-content: center
+			border-radius: 4px
+			box-shadow: 0 8px 23px 0 rgba(18, 213, 120, 0.15)
+			background-color: #12d578
+			color: #fff
+			text-transform: uppercase
+			font-weight: bold
+			font-size: 20px
+			transition: all 0.3s ease
+			border: 1px solid #12d578
+			&:hover
+				background-color: darken(#12d578, 10%)
+				cursor: pointer
+
+
+
+::-webkit-input-placeholder
+	color: #2b2f3d
+	font-size: 18px
+	opacity: 0.5
+
+::-moz-placeholder
+	color: #2b2f3d
+	font-size: 18px
+	opacity: 0.5
+
+::-ms-input-placeholder	
+	color: #2b2f3d
+	font-size: 18px
+	opacity: 0.5
+
+::-webkit-textarea-placeholder
+	color: #2b2f3d
+	font-size: 18px
+	opacity: 0.5
+
+
+
+.info-grid
+	margin-bottom: 120px
+	.container
+		.row
+			justify-content: space-between
+	.info-item
+		border-radius: 4px
+		box-shadow: 0 8px 24px 0 rgba(23, 30, 55, 0.09)
+		background-color: #ffffff
+		color: #2b2f3d
+		padding: 35px 25px
+		display: flex
+		max-width: 368px
+		.item-icon
+			margin-right: 22px
+		.title
+			font-size: 24px
+			color: #2b2f3d
+		.text
+			font-size: 16px
+			line-height: 1.88
+			color: #2b2f3d
+
+.footer-line
+	border-top: 1px solid #e0eafa
+	padding: 25px 0
+	display: flex
+	justify-content: space-between
+	.copy
+		margin-right: auto
+		color: #2b2f3d
+		opacity: 0.5
+		font-size: 16px
+	.email
+		margin-right: 50px
+		color: #3a89db
+		display: flex
+		align-items: center
+		img
+			margin-right: 10px
+			position: relative
+			bottom: -1px
+		&:hover
+			text-decoration: none
+	.phone
+		color: #2b2f3d
+		display: flex
+		align-items: center
+		img
+			margin-right: 10px
+			position: relative
+			bottom: -1px
+		&:hover
+			text-decoration: none			
 
 @import "media" // Always at the end
